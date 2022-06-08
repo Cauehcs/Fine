@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "../../../constants";
 
 export const Container = styled.div`
   display: flex;
@@ -10,7 +9,7 @@ export const Container = styled.div`
 
   &:hover {
     opacity: 1;
-    background-color: rgba(255, 250, 255, 0.1);
+    background-color: rgba(48, 48, 54, 0.1);
     border-radius: 50%;
   }
 `;

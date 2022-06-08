@@ -4,14 +4,15 @@ import { COLORS } from "../../../constants";
 import { IconType } from "react-icons";
 
 interface IconSideBarProps {
-    icon: IconType;
+  icon: IconType;
+  color: string;
 }
 
-export function IconSideBar(props: IconSideBarProps)  {
-    const Icon = props.icon;
-    return (
-        <Container>
-            <Icon size={40} color={COLORS.white}></Icon>
-        </Container>
-    )
+export function IconSideBar(props: IconSideBarProps) {
+  const Icon = props.icon;
+  return (
+    <Container>
+      <Icon size={40} color={props.color}></Icon>
+    </Container>
+  );
 }

@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { COLORS } from "../../constants";
 
 export const Container = styled.div`
-  width: clamp(0px, 10vw, 100px);
+  width: clamp(0px, 10vw, 120px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: ${COLORS.black};
+  background-color: ${COLORS.background};
   height: 100vh;
+  box-shadow: -6px 0px 20px 4px rgb(0 0 0 / 20%);
 
   div.gc-icons {
     > div {
@@ -24,7 +25,7 @@ export const Container = styled.div`
     margin-top: 32px;
     padding: 16px;
     border-radius: 50%;
-    background-color: ${COLORS.primary};
+    background-color: ${COLORS.black};
     opacity: 1;
   }
 
