@@ -1,7 +1,13 @@
-import { AppCore } from './AppRoutes'
+import { AppCore } from "./AppCore";
+import Global from "./styles/global";
 
 function App() {
-  return <AppCore />
+  return (
+    <>
+      <Global />
+      <AppCore />
+    </>
+  );
 }
 
-export default App
+export default App;
