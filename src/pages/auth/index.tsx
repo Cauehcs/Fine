@@ -1,3 +1,4 @@
+import { Button } from "../../components/button";
 import { Divider } from "../../components/divider";
 import { Input } from "../../components/input";
 import { Container } from "./style";
@@ -10,6 +11,7 @@ export function Auth() {
         <Divider />
         <Input label="E-mail" margin="none" />
         <Input label="Senha" margin="margin-top" />
+        <Button text="Entrar com E-mail" />
         <Divider />
       </div>
     </Container>
