@@ -3,6 +3,7 @@ import { Container } from "./style";
 
 interface InputProps {
   label: string;
+  type: "text" | "password";
   margin: "margin-top" | "margin-bottom" | "none";
 }
 
@@ -16,7 +17,7 @@ export function Input(props: InputProps) {
       <label className={focused ? props.margin + " active" : props.margin}>
         {props.label}
       </label>
-      <input onFocus={onFocus} onBlur={onBlur} />
+      <input type={props.type} onFocus={onFocus} onBlur={onBlur} />
     </Container>
   );
 }

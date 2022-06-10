@@ -47,4 +47,8 @@ export const Container = styled.div`
       border-color: ${COLORS.primary};
     }
   }
+
+  input[type="password"] {
+    font-size: 24px;
+  }
 `;
