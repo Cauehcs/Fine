@@ -21,11 +21,11 @@ export const Container = styled.div`
     background-color: ${COLORS.white};
     box-shadow: 0px 2px 8px 3px rgb(0 0 0 / 20%);
     border-radius: 8px;
-    padding: 54px 64px;
+    padding: 54px 64px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     width: clamp(400px, 40vw, 720px);
 
     h1 {
@@ -33,6 +33,30 @@ export const Container = styled.div`
       font-size: 24px;
       font-weight: 600;
       font-family: "Archivo", Archivo;
+      width: 100%;
+      text-align: left;
+    }
+
+    a {
+      color: ${COLORS.title};
+      font-size: 16px;
+      opacity: 0.8;
+      font-weight: 600;
+      font-family: "Archivo", Archivo;
+      text-decoration: none;
+    }
+
+    a {
+      margin-top: 16px;
+    }
+
+    a:first-of-type {
+      margin-top: 48px;
+    }
+
+    a:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 `;

@@ -5,6 +5,7 @@ import { Input } from "../../components/input";
 import { Container } from "./style";
 import { COLORS } from "../../constants";
 import { ButtonGroup } from "../../components/groupButton";
+import { Link } from "react-router-dom";
 
 export function Auth() {
   return (
@@ -50,6 +51,8 @@ export function Auth() {
             colorIcon={COLORS.white}
           />
         </ButtonGroup>
+        <Link to="/home">Recuperar senha</Link>
+        <Link to="/">Criar conta</Link>
       </div>
     </Container>
   );

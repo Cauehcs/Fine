@@ -15,7 +15,7 @@ export function AppCore() {
       <SideBar />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
