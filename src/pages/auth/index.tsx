@@ -4,6 +4,7 @@ import { Divider } from "../../components/divider";
 import { Input } from "../../components/input";
 import { Container } from "./style";
 import { COLORS } from "../../constants";
+import { ButtonGroup } from "../../components/groupButton";
 
 export function Auth() {
   return (
@@ -23,13 +24,32 @@ export function Auth() {
           />
         </form>
         <Divider />
-        <Button
-          margin="none"
-          size="large"
-          text="Logar com Google"
-          colorBackground={COLORS.white}
-          colorText={COLORS.black}
-        />
+        <ButtonGroup size="large" gap={16} maxCollumn={3}>
+          <Button
+            margin="none"
+            size="group"
+            colorBackground={COLORS.green}
+            icon={FiChrome}
+            sizeIcon={28}
+            colorIcon={COLORS.white}
+          />
+          <Button
+            margin="none"
+            size="group"
+            colorBackground={COLORS.green}
+            icon={FiChrome}
+            sizeIcon={28}
+            colorIcon={COLORS.white}
+          />
+          <Button
+            margin="none"
+            size="group"
+            colorBackground={COLORS.green}
+            icon={FiChrome}
+            sizeIcon={28}
+            colorIcon={COLORS.white}
+          />
+        </ButtonGroup>
       </div>
     </Container>
   );

@@ -1,14 +1,13 @@
 import { ButtonHTMLAttributes } from "react";
 import { IconType } from "react-icons";
-import { COLORS } from "../../constants";
 import { Container } from "./style";
 
 interface propsButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   text?: string;
-  size: "large";
+  size: "large" | "group";
   margin: "none" | "margin-top" | "margin-bottom";
   icon?: IconType;
-  sizeIcon?: string;
+  sizeIcon?: number;
   colorIcon?: string;
   colorText?: string;
   colorBackground: string;
@@ -23,7 +22,11 @@ export function Button(props: propsButton) {
       className={`${props.size} ${props.margin}`}
     >
       {props.icon ? (
-        <Icon size={props.sizeIcon} color={props.colorIcon}></Icon>
+        <Icon
+          className={`${props.text?.length > 0 ? "onMargin" : ""}`}
+          size={props.sizeIcon}
+          color={props.colorIcon}
+        ></Icon>
       ) : null}
       {props.text}
     </Container>

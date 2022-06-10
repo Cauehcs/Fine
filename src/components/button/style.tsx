@@ -5,10 +5,6 @@ export const Container = styled.button.attrs((props) => {})`
     if (props.className.includes("large")) {
       return "width: 100%; height: 56px;";
     }
-
-    if (props.className.includes("quad")) {
-      return "width: 56px; height: 56px;";
-    }
   }};
 
   ${(props) => {
@@ -17,7 +13,7 @@ export const Container = styled.button.attrs((props) => {})`
     }
   }};
 
-  svg {
+  svg.onMargin {
     margin-right: 8px;
   }
 
@@ -34,7 +30,8 @@ export const Container = styled.button.attrs((props) => {})`
   transition: 0.2s ease-in-out;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 `;

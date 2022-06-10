@@ -3,11 +3,18 @@ import { COLORS } from "../../constants";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-color: ${COLORS.background};
   display: flex;
+  flex: 1 auto;
   justify-content: center;
   align-items: center;
+  padding: 54px 0px;
+
+  form {
+    width: 100%;
+  }
 
   > div {
     position: relative;
@@ -19,11 +26,13 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: clamp(400px, 40vw, 720px);
 
     h1 {
       color: ${COLORS.title};
       font-size: 24px;
       font-weight: 600;
+      font-family: "Archivo", Archivo;
     }
   }
 `;
