@@ -7,7 +7,7 @@ import { COLORS } from "../../constants";
 import { ButtonGroup } from "../../components/groupButton";
 import { Link } from "react-router-dom";
 
-export function Auth() {
+export function Login() {
   return (
     <Container>
       <div>
@@ -52,7 +52,7 @@ export function Auth() {
           />
         </ButtonGroup>
         <Link to="/home">Recuperar senha</Link>
-        <Link to="/">Criar conta</Link>
+        <Link to="/register">Criar conta</Link>
       </div>
     </Container>
   );

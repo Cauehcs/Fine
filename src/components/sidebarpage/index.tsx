@@ -5,7 +5,7 @@ import { IconSideBar } from "./iconSideBar";
 import { Container } from "./style";
 
 export function SideBar() {
-  return window.location.pathname.toLowerCase() != "/auth" ? (
+  return (
     <Container>
       <IconSideBar icon={FiChrome} color={COLORS.white} />
       <div className="gc-icons">
@@ -16,5 +16,5 @@ export function SideBar() {
       </div>
       <ProfileSideBar />
     </Container>
-  ) : null;
+  );
 }

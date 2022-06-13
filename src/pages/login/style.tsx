@@ -44,17 +44,16 @@ export const Container = styled.div`
       font-weight: 600;
       font-family: "Archivo", Archivo;
       text-decoration: none;
-    }
-
-    a {
       margin-top: 16px;
+      outline: none;
     }
 
     a:first-of-type {
       margin-top: 48px;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
       cursor: pointer;
       text-decoration: underline;
     }
