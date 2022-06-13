@@ -20,6 +20,7 @@ export function Button(props: propsButton) {
       colorText={props.colorText}
       colorBackground={props.colorBackground}
       className={`${props.size} ${props.margin}`}
+      onClick={props.onClick}
     >
       {props.icon ? (
         <Icon

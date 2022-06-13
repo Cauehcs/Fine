@@ -6,8 +6,12 @@ import { Container } from "./style";
 import { COLORS } from "../../constants";
 import { ButtonGroup } from "../../components/groupButton";
 import { Link } from "react-router-dom";
+import { Auth } from "../../services/auth";
+import { GoogleAuthProvider } from "firebase/auth";
 
 export function Login() {
+  const auth = new Auth();
+
   return (
     <Container>
       <div>
@@ -33,6 +37,10 @@ export function Login() {
             icon={FiChrome}
             sizeIcon={28}
             colorIcon={COLORS.white}
+            onClick={() => {
+              const provider = new GoogleAuthProvider();
+              auth.SignOnPopup(provider);
+            }}
           />
           <Button
             margin="none"
