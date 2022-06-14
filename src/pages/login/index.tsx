@@ -38,6 +38,7 @@ export function Login() {
             sizeIcon={28}
             colorIcon={COLORS.white}
             onClick={() => {
+              console.log("Google");
               const provider = new GoogleAuthProvider();
               auth.SignOnPopup(provider);
             }}

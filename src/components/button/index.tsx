@@ -15,6 +15,7 @@ interface propsButton extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button(props: propsButton) {
   const Icon = props.icon;
+  const text = props.text ? props.text : "";
   return (
     <Container
       colorText={props.colorText}
@@ -22,13 +23,13 @@ export function Button(props: propsButton) {
       className={`${props.size} ${props.margin}`}
       onClick={props.onClick}
     >
-      {props.icon ? (
+      {Icon && (
         <Icon
-          className={`${props.text?.length > 0 ? "onMargin" : ""}`}
+          className={`${text.length > 0 ? "onMargin" : ""}`}
           size={props.sizeIcon}
           color={props.colorIcon}
-        ></Icon>
-      ) : null}
+        />
+      )}
       {props.text}
     </Container>
   );

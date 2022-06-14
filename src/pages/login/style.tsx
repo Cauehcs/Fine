@@ -20,7 +20,6 @@ export const Container = styled.div`
     position: relative;
     background-color: ${COLORS.white};
     box-shadow: 0px 2px 8px 3px rgb(0 0 0 / 20%);
-    border-radius: 8px;
     padding: 54px 64px 24px;
     display: flex;
     flex-direction: column;
