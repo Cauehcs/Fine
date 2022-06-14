@@ -20,7 +20,7 @@ export function AppCore() {
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Login />} />
         </Routes>
       </Router>
     </Container>
